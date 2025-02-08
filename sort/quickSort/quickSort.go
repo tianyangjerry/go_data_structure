@@ -29,6 +29,7 @@ func (d *Data) partition(l, r int) int {
 }
 
 // QuickSort l: 左边界 r: 右边界
+// 注意：左右边界都是闭区间 eg: [0, len(arr)-1]
 func (d *Data) QuickSort(l, r int) {
 	if l < r {
 		p := d.partition(l, r)

@@ -25,7 +25,7 @@ func TestMergeSortMultiple(t *testing.T) {
 		// 使用 mergeSort 进行排序
 		d := Data{}
 		data := d.NewData(arr)
-		data.MergeSort(0, len(arr)-1)
+		data.MergeSort(0, len(arr))
 
 		// 比对结果
 		for k, v := range arr {
