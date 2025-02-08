@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="Data">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/sort/quickSort/quickSort.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="data">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/sort/quickSort.go" />
+              <option value="file://$PROJECT_DIR$/sort/quickSort/quickSort.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="scannedPathMapping">
       <map>
         <entry key="file://$PROJECT_DIR$/main.go">
@@ -13,12 +32,55 @@
         <entry key="file://$PROJECT_DIR$/sort/quickSort.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1738925466094" />
+              <option name="lastModified" value="1739006296489" />
+              <option name="schema">
+                <list>
+                  <option value="data" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSort.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739021350230" />
+              <option name="schema">
+                <list>
+                  <option value="Data" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSortTest.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739006343218" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSort_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739021195559" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/quickSortTest.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739006284825" />
             </ScannedPath>
           </value>
         </entry>
       </map>
     </option>
-    <option name="lastTimeChecked" value="1738925357479" />
+    <option name="tableStructMapping">
+      <map>
+        <entry key="data" value="Data" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1738989593560" />
   </component>
 </project>
