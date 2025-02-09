@@ -3,11 +3,25 @@
   <component name="GoORMHelperCache">
     <option name="schemaMapping">
       <map>
+        <entry key="BST">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/binaryTree/binarySearchTree.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Data">
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/sort/mergeSort/mergeSort.go" />
               <option value="file://$PROJECT_DIR$/sort/quickSort/quickSort.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Node">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/binaryTree/binarySearchTree.go" />
             </set>
           </value>
         </entry>
@@ -25,6 +39,13 @@
             </set>
           </value>
         </entry>
+        <entry key="node">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/binaryTree/binarySearchTree.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="stack">
           <value>
             <set>
@@ -36,6 +57,33 @@
     </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/STtable/STtable.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739191093634" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/binaryTree/binarySearchTree.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739267752702" />
+              <option name="schema">
+                <list>
+                  <option value="node" />
+                  <option value="BST" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/binaryTree/binarySearchTree_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739194792301" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/linearTables/queue/queue.go">
           <value>
             <ScannedPath>
@@ -116,7 +164,9 @@
     </option>
     <option name="tableStructMapping">
       <map>
+        <entry key="bst" value="BST" />
         <entry key="data" value="Data" />
+        <entry key="node" value="node" />
         <entry key="queue" value="Queue" />
         <entry key="stack" value="Stack" />
       </map>
