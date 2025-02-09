@@ -6,15 +6,29 @@
         <entry key="Data">
           <value>
             <set>
+              <option value="file://$PROJECT_DIR$/sort/mergeSort/mergeSort.go" />
               <option value="file://$PROJECT_DIR$/sort/quickSort/quickSort.go" />
             </set>
           </value>
         </entry>
-        <entry key="data">
+        <entry key="Queue">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/sort/quickSort.go" />
-              <option value="file://$PROJECT_DIR$/sort/quickSort/quickSort.go" />
+              <option value="file://$PROJECT_DIR$/linearTables/queue/queue.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Stack">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linearTables/stack/stack.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="stack">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linearTables/stack/stack.go" />
             </set>
           </value>
         </entry>
@@ -22,43 +36,48 @@
     </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/linearTables/queue/queue.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739110973493" />
+              <option name="schema">
+                <list>
+                  <option value="Queue" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/linearTables/stack.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739107051106" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/linearTables/stack/stack.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739110973423" />
+              <option name="schema">
+                <list>
+                  <option value="Stack" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1738925466103" />
+              <option name="lastModified" value="1739091893500" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/sort/mergeSort/mergeSort.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1739024544741" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/sort/mergeSort/mergeSort_test.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1739024790108" />
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/sort/quickSort.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1739006296489" />
-              <option name="schema">
-                <list>
-                  <option value="data" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
-        <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSort.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1739021980338" />
+              <option name="lastModified" value="1739091893477" />
               <option name="schema">
                 <list>
                   <option value="Data" />
@@ -67,10 +86,22 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSortTest.go">
+        <entry key="file://$PROJECT_DIR$/sort/mergeSort/mergeSort_test.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1739006343218" />
+              <option name="lastModified" value="1739091617463" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSort.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739091893492" />
+              <option name="schema">
+                <list>
+                  <option value="Data" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
@@ -81,20 +112,15 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/sort/quickSortTest.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1739006284825" />
-            </ScannedPath>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="tableStructMapping">
       <map>
         <entry key="data" value="Data" />
+        <entry key="queue" value="Queue" />
+        <entry key="stack" value="Stack" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1738989593560" />
+    <option name="lastTimeChecked" value="1739107007707" />
   </component>
 </project>
