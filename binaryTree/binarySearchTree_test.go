@@ -7,13 +7,13 @@ import (
 )
 
 func TestBST(t *testing.T) {
-	testNumbers := make([]int, 100)
+	testNumbers := make([]int, 10000)
 	cnt := make(map[int]int)
 	rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	minExpVal := int(1e10)
 	maxExpVal := int(-1e10)
-	for i := 0; i < 100; i++ {
+	for i := 0; i < len(testNumbers); i++ {
 		testNumbers[i] = rand.Intn(1000)
 		cnt[testNumbers[i]] += 1
 	}
