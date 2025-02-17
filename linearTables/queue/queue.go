@@ -38,3 +38,15 @@ func (q *Queue) IsEmpty() bool {
 func (q *Queue) Size() int {
 	return q.size
 }
+
+func (q *Queue) toString() string {
+	QS := "["
+	for i := 0; i < q.size; i++ {
+		QS += string(rune(q.data[i]))
+		if i != q.size-1 {
+			QS += ", "
+		}
+	}
+	QS += "]"
+	return QS
+}

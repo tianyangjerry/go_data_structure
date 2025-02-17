@@ -18,6 +18,13 @@
             </set>
           </value>
         </entry>
+        <entry key="LinkedList">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/linkedList.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="Queue">
           <value>
             <set>
@@ -36,6 +43,7 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/binaryTree/binarySearchTree.go" />
+              <option value="file://$PROJECT_DIR$/linkedList/linkedList.go" />
             </set>
           </value>
         </entry>
@@ -47,6 +55,20 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1739191093634" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/binarySearch/binarySearch.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740051465348" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/binarySearch/binarySearch_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740058411700" />
             </ScannedPath>
           </value>
         </entry>
@@ -91,22 +113,22 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/heap/heap.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1739696773884" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/linearTables/queue/queue.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1739110973493" />
+              <option name="lastModified" value="1739860540490" />
               <option name="schema">
                 <list>
                   <option value="Queue" />
                 </list>
               </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/linearTables/queue/queue_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1739860540289" />
             </ScannedPath>
           </value>
         </entry>
@@ -122,10 +144,37 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740232505690" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/linkedList/linkedList.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740154233259" />
+              <option name="schema">
+                <list>
+                  <option value="node" />
+                  <option value="LinkedList" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/linkedList/linkedList_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740204769624" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1739091893500" />
+              <option name="lastModified" value="1740214262798" />
             </ScannedPath>
           </value>
         </entry>
@@ -151,19 +200,42 @@
         <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSort.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1739091893492" />
-              <option name="schema">
-                <list>
-                  <option value="Data" />
-                </list>
-              </option>
+              <option name="lastModified" value="1740218510633" />
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/sort/quickSort/quickSort_test.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1739021195559" />
+              <option name="lastModified" value="1740214244571" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/selectionSort/selectionSort.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740062404525" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/sort/selectionSort/selectionSort_test.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740059423888" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/tools/array/compareArrIsSame.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740202308051" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/tools/compairArr.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1740201985721" />
             </ScannedPath>
           </value>
         </entry>
@@ -180,11 +252,12 @@
       <map>
         <entry key="bst" value="BST" />
         <entry key="data" value="Data" />
+        <entry key="linked_list" value="LinkedList" />
         <entry key="node" value="node" />
         <entry key="queue" value="Queue" />
         <entry key="stack" value="Stack" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1739692270263" />
+    <option name="lastTimeChecked" value="1740199644697" />
   </component>
 </project>

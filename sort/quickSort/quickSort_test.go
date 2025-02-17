@@ -1,37 +1,39 @@
 package quickSort
 
 import (
+	"go_data_structure/tools/array"
 	"math/rand"
 	"sort"
 	"testing"
 	"time"
 )
 
-func TestQuickSortMultiple(t *testing.T) {
-	rand.Seed(time.Now().UnixNano())
+const testTime = 100
 
-	for i := 0; i < 100; i++ {
+func TestQuickSortMultiple(t *testing.T) {
+	rand.New(rand.NewSource(time.Now().UnixNano()))
+
+	for i := 0; i < testTime; i++ {
 		// 生成100个随机数
+		targetArr := make([]int, 100)
 		arr := make([]int, 100)
-		for j := range arr {
-			arr[j] = rand.Intn(1000) // 生成0到999之间的随机整数
+		for j := 0; j < len(targetArr); j++ {
+			targetArr[j] = rand.Intn(1000) // 生成0到999之间的随机整数
+			arr[j] = targetArr[j]
 		}
 
 		// 使用 Go 的 sort 包进行排序
-		expected := make([]int, len(arr))
-		copy(expected, arr)
-		sort.Ints(expected)
+		sort.Ints(targetArr)
 
 		// 使用 quickSort 进行排序
-		d := Data{}
-		data := d.NewData(arr)
-		data.QuickSort(0, len(arr)-1)
+		QuickSort(arr)
 
 		// 比对结果
-		for k, v := range arr {
-			if v != expected[k] {
-				t.Errorf("Test %d, Expected %d, got %d", i, expected[k], v)
-			}
+		if array.CompareArrIsSame(arr, targetArr) {
+			t.Log("排序成功")
+		} else {
+			t.Error("排序失败")
+			println(arr)
 		}
 	}
 }
