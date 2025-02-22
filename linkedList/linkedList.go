@@ -1,16 +1,16 @@
 package linkedList
 
-type node[T comparable] struct {
+type linkedListNode[T comparable] struct {
 	value T
-	next  *node[T]
+	next  *linkedListNode[T]
 }
 
 type LinkedList[T comparable] struct {
-	head *node[T]
+	head *linkedListNode[T]
 }
 
 func (list *LinkedList[T]) Add(value T) {
-	newNode := &node[T]{value: value, next: nil}
+	newNode := &linkedListNode[T]{value: value, next: nil}
 
 	if list.head == nil {
 		list.head = newNode
@@ -21,7 +21,7 @@ func (list *LinkedList[T]) Add(value T) {
 }
 
 func (list *LinkedList[T]) Append(value T) {
-	newNode := &node[T]{value: value, next: nil}
+	newNode := &linkedListNode[T]{value: value, next: nil}
 
 	if list.head == nil {
 		list.head = newNode
@@ -46,7 +46,7 @@ func (list *LinkedList[T]) Contains(value T) bool {
 	}
 
 	current := list.head
-	var previous *node[T]
+	var previous *linkedListNode[T]
 
 	for current != nil && current.value != value {
 		previous = current
@@ -72,7 +72,7 @@ func (list *LinkedList[T]) Delete(value T) bool {
 	}
 
 	current := list.head
-	var previous *node[T]
+	var previous *linkedListNode[T]
 	for current != nil && current.value != value {
 		previous = current
 		current = current.next

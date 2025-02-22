@@ -14,7 +14,20 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/sort/mergeSort/mergeSort.go" />
-              <option value="file://$PROJECT_DIR$/sort/quickSort/quickSort.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DoublyLinkedList">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="DoublyLinkedListNode">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go" />
             </set>
           </value>
         </entry>
@@ -22,6 +35,20 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/linkedList/linkedList.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="List">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Node">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go" />
             </set>
           </value>
         </entry>
@@ -36,6 +63,20 @@
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/linearTables/stack/stack.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="doublyLinkedListNode">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="linkedListNode">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/linkedList/linkedList.go" />
             </set>
           </value>
         </entry>
@@ -147,17 +188,23 @@
         <entry key="file://$PROJECT_DIR$/linkedList/doublyLinkedList.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1740232505690" />
+              <option name="lastModified" value="1740293883406" />
+              <option name="schema">
+                <list>
+                  <option value="DoublyLinkedListNode" />
+                  <option value="DoublyLinkedList" />
+                </list>
+              </option>
             </ScannedPath>
           </value>
         </entry>
         <entry key="file://$PROJECT_DIR$/linkedList/linkedList.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1740154233259" />
+              <option name="lastModified" value="1740292501694" />
               <option name="schema">
                 <list>
-                  <option value="node" />
+                  <option value="linkedListNode" />
                   <option value="LinkedList" />
                 </list>
               </option>
@@ -167,7 +214,7 @@
         <entry key="file://$PROJECT_DIR$/linkedList/linkedList_test.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1740204769624" />
+              <option name="lastModified" value="1740233992326" />
             </ScannedPath>
           </value>
         </entry>
@@ -232,13 +279,6 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/tools/compairArr.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1740201985721" />
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/union-findSet/unionFindSet.go">
           <value>
             <ScannedPath>
@@ -252,12 +292,15 @@
       <map>
         <entry key="bst" value="BST" />
         <entry key="data" value="Data" />
+        <entry key="doubly_linked_list" value="DoublyLinkedList" />
+        <entry key="doubly_linked_list_node" value="DoublyLinkedListNode" />
         <entry key="linked_list" value="LinkedList" />
-        <entry key="node" value="node" />
+        <entry key="linked_list_node" value="linkedListNode" />
+        <entry key="list" value="List" />
         <entry key="queue" value="Queue" />
         <entry key="stack" value="Stack" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1740199644697" />
+    <option name="lastTimeChecked" value="1740286217096" />
   </component>
 </project>
