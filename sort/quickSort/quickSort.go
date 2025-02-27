@@ -1,6 +1,8 @@
 package quickSort
 
-import "golang.org/x/exp/constraints"
+import (
+	"golang.org/x/exp/constraints"
+)
 
 type quickArr[T constraints.Ordered] []T
 

@@ -1,38 +1,41 @@
 package heap
 
-import "errors"
+import (
+	"errors"
+	"golang.org/x/exp/constraints"
+)
 
-type BinaryHeap []int
+type BinaryHeap[T constraints.Ordered] []T
 
-func NewBinaryHeap() *BinaryHeap {
-	return &BinaryHeap{}
+func NewBinaryHeap[T constraints.Ordered]() *BinaryHeap[T] {
+	return &BinaryHeap[T]{}
 }
 
-func (h *BinaryHeap) len() int {
+func (h *BinaryHeap[T]) len() int {
 	return len(*h)
 }
 
-func (h *BinaryHeap) parent(i int) int {
+func (h *BinaryHeap[T]) parent(i int) int {
 	return (i - 1) / 2
 }
 
-func (h *BinaryHeap) leftChild(i int) int {
+func (h *BinaryHeap[T]) leftChild(i int) int {
 	return i*2 + 1
 }
 
-func (h *BinaryHeap) rightChild(i int) int {
+func (h *BinaryHeap[T]) rightChild(i int) int {
 	return i*2 + 2
 }
 
-func (h *BinaryHeap) hasLeftChild(i int) bool {
+func (h *BinaryHeap[T]) hasLeftChild(i int) bool {
 	return h.leftChild(i) < h.len()
 }
 
-func (h *BinaryHeap) hasRightChild(i int) bool {
+func (h *BinaryHeap[T]) hasRightChild(i int) bool {
 	return h.rightChild(i) < h.len()
 }
 
-func (h *BinaryHeap) up(i int) {
+func (h *BinaryHeap[T]) up(i int) {
 	for {
 		if h.parent(i) < 0 {
 			break
@@ -46,7 +49,7 @@ func (h *BinaryHeap) up(i int) {
 	}
 }
 
-func (h *BinaryHeap) down(i int) {
+func (h *BinaryHeap[T]) down(i int) {
 	for {
 		if !h.hasLeftChild(i) {
 			break
@@ -64,18 +67,18 @@ func (h *BinaryHeap) down(i int) {
 	}
 }
 
-func (h *BinaryHeap) Insert(value int) {
+func (h *BinaryHeap[T]) Insert(value T) {
 	*h = append(*h, value)
 	h.up(h.len() - 1)
 }
 
-func (h *BinaryHeap) GetMIN() int {
+func (h *BinaryHeap[T]) GetMIN() T {
 	return (*h)[0]
 }
 
-func (h *BinaryHeap) DeleteMin() (int, error) {
+func (h *BinaryHeap[T]) DeleteMin() (T, error) {
 	if h.len() == 0 {
-		return 0, errors.New("heap is empty")
+		return T(0), errors.New("heap is empty")
 	}
 	m := (*h)[0]
 	(*h)[0] = (*h)[h.len()-1]

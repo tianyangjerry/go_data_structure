@@ -1,43 +1,43 @@
 package mergeSort
 
-type Data struct {
-	Value []int
+import "golang.org/x/exp/constraints"
+
+type mergeSortArr[T constraints.Ordered] []T
+
+func MergeSort[T constraints.Ordered](arr []T) {
+	a := mergeSortArr[T](arr)
+	a.fastSort(a, 0, len(arr))
 }
 
-func (d *Data) NewData(arr []int) *Data {
-	d.Value = arr
-	return d
-}
-
-func (d *Data) Merge(left, right []int) []int {
-	result := make([]int, 0, len(left)+len(right))
-	i, j := 0, 0
-	for i < len(left) && j < len(right) {
-		if left[i] <= right[j] {
-			result = append(result, left[i])
-			i++
-		} else {
-			result = append(result, right[j])
-			j++
-		}
-	}
-
-	result = append(result, left[i:]...)
-	result = append(result, right[j:]...)
-	return result
-}
-
-// MergeSort l: 左边界 r: 右边界
-// 注意：左边界是闭区间，右边界是开区间 Eg: [0, len(arr))
-func (d *Data) MergeSort(l, r int) {
+func (a mergeSortArr[T]) fastSort(arr []T, l, r int) {
 	if r-l <= 1 {
 		return
 	}
 
 	mid := (l + r) >> 1
-	d.MergeSort(l, mid)
-	d.MergeSort(mid, r)
+	a.fastSort(arr, l, mid)
+	a.fastSort(arr, mid, r)
 
-	merged := d.Merge(d.Value[l:mid], d.Value[mid:r])
-	copy(d.Value[l:r], merged)
+	merged := a.merge(arr[l:mid], arr[mid:r])
+	copy(arr[l:r], merged)
+}
+
+func (a mergeSortArr[T]) merge(leftArr, rightArr []T) []T {
+	result := make([]T, 0, len(leftArr)+len(rightArr))
+
+	i, j := 0, 0
+
+	for i < len(leftArr) && j < len(rightArr) {
+		if leftArr[i] <= rightArr[j] {
+			result = append(result, leftArr[i])
+			i += 1
+		} else {
+			result = append(result, rightArr[j])
+			j += 1
+		}
+	}
+
+	result = append(result, leftArr[i:]...)
+	result = append(result, rightArr[j:]...)
+	return result
 }
